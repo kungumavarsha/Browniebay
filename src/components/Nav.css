@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-content{
+  height: 100px;
+  width: 100vw;
+  background-color:#9063CD;
+  display: flex;
+  align-items: center;
+
+}
+.navbar-logo{
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 20px;
+}
+.navbar-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-left: 600px;
+ 
+
+}
+.navbar-icons a:hover{
+  border-radius: 10px;
+  color:#62438C;
+  transition: 1s;
+  
+}
+.navbar-icons a{
+  color: #fff;
+
+  text-decoration: none;
+  font-size: 25px;
+}
+.content{
+ height: 50px;
+ width: 100vw;
+ background-color: #ffffff;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-bottom: 30px;
+ margin-top: 30px;
+ padding: 0 40px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.cart-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.content button{
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold; 
+  border-radius: 10px;
+  transition: color 0.3s;
+  margin: 0;
+}
+.content button:hover{
+ color:#62438C;
+  transition: 1s;
+}
+.cart-icon{
+    color: #000;
+    border: none;
+    font-size: 20px;
+    font-weight: bold; 
+    margin-left: 0;
+    margin-top: 0;
+    transition: color 0.3s;
+}
+.cart-icon a{
+  text-decoration: none;
+  margin-left: 10px;
+}
+.cart-icon:hover{
+  color: #62438C;
+  transition: 1s;
+}
+
+
+.about{
+  height: 500px; 
+  width: 100vw;
+  background-color: #e6deef;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.about p{
+  margin-left: 600px;
+  font-size: 20px;
+
+}
+.about h1{
+  margin-left: 750px;
+  padding: 15px 30px;
+}
+.brownie-image {        
+  background-image: url('../src/assets/brownie.png');
+  width: 100vw;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 100px;
+  opacity: 0.8;
+}
+
+.brownie-image-bg {
+  position: relative;
+  width: 100vw;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.brownie-image-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3); 
+  z-index: 1;
+}
+
+.brownie-image-bg h1 {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
