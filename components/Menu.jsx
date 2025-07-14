@@ -11,7 +11,7 @@ import b6 from '../src/assets/b6.png';
 import double from '../src/assets/double.png';
 import loaded from '../src/assets/loaded.png';
 import c2 from '../src/assets/c2.png';
-import oreo from '../src/assets/oreo.png';
+import oreo from '../src/assets/Oreo.png';
 import ferro from '../src/assets/ferro.png';
 import slab4 from '../src/assets/slab4.png';
 import slap1 from '../src/assets/slap 1.png';
