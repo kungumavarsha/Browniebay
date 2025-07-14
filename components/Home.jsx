@@ -80,10 +80,7 @@ function Home() {
         </div>
         {/* Our Story and Customer Favorites Section */}
         <div style={{ maxWidth: '1100px', margin: '40px auto', padding: '0 20px' }}>
-          <h2 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '10px' , color: '#62438C' }}>Our Story</h2>
-          <p style={{ fontSize: '1.1rem', marginBottom: '30px', color: '#333' }}>
-            Founded in 2023, our bakery is a family-owned business dedicated to creating exceptional baked goods. We use traditional techniques and high-quality ingredients to bring you the best flavors. Our passion for baking is reflected in every product we create, from our classic breads to our innovative pastries.
-          </p>
+        
           <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '20px' , color: '#62438C' }}>Customer Favorites</h3>
           <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', justifyContent: 'center' }}>
             {/* Card 1 */}
