@@ -120,7 +120,7 @@ function Home() {
                 boxShadow: '0 2px 8px rgba(0,0,0,0.07)',
                 transition: 'background 0.2s',
               }}
-              onClick={() => window.open('https://www.instagram.com/direct/t/thebrowniebay__/', '_blank')}
+              onClick={() => window.open('https://www.instagram.com/direct/t/thebrowniebay_/', '_blank')}     
             >Order Now</button>
             <button
               style={{
@@ -135,7 +135,7 @@ function Home() {
                 boxShadow: '0 2px 8px rgba(0,0,0,0.07)',
                 transition: 'background 0.2s',
               }}
-              onClick={() => window.location.href = '/menu'}
+              onClick={() => window.location.href = '/Menu'}
             >Menu</button>
           </div>
         </div>
