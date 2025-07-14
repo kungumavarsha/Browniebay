@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -8,6 +8,7 @@ import './Nav.css';
 
 const Nav = () => {
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
   
   const handleOrderClick = () => {
     // Redirect to Instagram direct message for thebrowniebay__ account
@@ -19,21 +20,27 @@ const Nav = () => {
     
       <div className="navbar-content">
         <div className="navbar-logo">
-          <img src={logo} alt="Brownie Bay Logo" style={{ height: '100px', width: 'auto', marginLeft: '100px' }} />
+          <img src={logo} alt="Brownie Bay Logo" style={{ height: '100px', width: 'auto', marginLeft: '10px' }} />
         </div>
         <div className="navbar-icons">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          {/* Hamburger menu button for mobile, now below icons */}
+          <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </button>
         </div>
-        
       </div>
-      <div className="content">  
+      {/* Responsive nav links */}
+      <div className={`content${menuOpen ? ' open' : ''}`}>
         <div className="nav-buttons">
-          <button onClick={() => navigate("/")}>Home</button>
-          <button onClick={() => navigate("/about")}>About</button>
-          <button onClick={() => navigate("/menu")}>Menu</button>
-          <button onClick={handleOrderClick}>Order</button>
+          <button onClick={() => { navigate("/"); setMenuOpen(false); }}>Home</button>
+          <button onClick={() => { navigate("/about"); setMenuOpen(false); }}>About</button>
+          <button onClick={() => { navigate("/menu"); setMenuOpen(false); }}>Menu</button>
+          <button onClick={() => { handleOrderClick(); setMenuOpen(false); }}>Order</button>
         </div>
         {/* Cart icon removed */}
       </div>
