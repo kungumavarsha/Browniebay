@@ -1136,7 +1136,7 @@ const Menu = () => {
       {/* Order Now Button at the end of the menu page */}
       <div style={{ textAlign: 'center', margin: '60px 0 40px 0' }}>
         <a
-          href="https://www.instagram.com/direct/t/thebrowniebay__/"
+          href="https://www.instagram.com/thebrowniebay__/"
           target="_blank"
           rel="noopener noreferrer"
           style={{
