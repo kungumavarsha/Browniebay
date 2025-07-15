@@ -129,8 +129,10 @@ function Home() {
             >
               Order Now
             </a>
-            <button
+            <a
+              href="/Menu"
               style={{
+                display: 'inline-block',
                 background: '#fff',
                 color: '#62438C',
                 border: '2px solid #b39ddb',
@@ -141,9 +143,10 @@ function Home() {
                 cursor: 'pointer',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.07)',
                 transition: 'background 0.2s',
+                textDecoration: 'none',
+                textAlign: 'center'
               }}
-              onClick={() => window.location.href = '/Menu'}
-            >Menu</button>
+            >Menu</a>
           </div>
         </div>
         {/* Minimal Centered Footer */}
@@ -184,7 +187,7 @@ function Home() {
           </div> */}
           {/* Copyright */}
           <div style={{ color: '#222', fontSize: '0.95rem', marginBottom: 8, textAlign: 'center', fontFamily: 'Poppins, sans-serif' }}>
-            The Brownie Bay © 2024
+            The Brownie Bay © 2023
           </div>
           {/* Legal Links */}
           <div style={{ color: '#222', fontSize: '0.95rem', textAlign: 'center', letterSpacing: '0.02em', fontFamily: 'Poppins, sans-serif' }}>

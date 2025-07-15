@@ -39,8 +39,28 @@ const Nav = () => {
         <div className="nav-buttons">
           <button onClick={() => { navigate("/"); setMenuOpen(false); }}>Home</button>
           <button onClick={() => { navigate("/about"); setMenuOpen(false); }}>About</button>
-          <button onClick={() => { navigate("/menu"); setMenuOpen(false); }}>Menu</button>
-          <button onClick={() => { handleOrderClick(); setMenuOpen(false); }}>Order</button>
+          <button onClick={() => { navigate("/Menu"); setMenuOpen(false); }}>Menu</button>
+          <a
+            href="https://instagram.com/thebrowniebay__/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+             
+              color: 'white',
+              border: 'none',
+              borderRadius: '24px',
+              fontFamily: 'Poppins, sans-serif',
+              fontSize: '1.1rem',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.07)',
+              transition: 'background 0.2s',
+              textDecoration: 'none',
+              textAlign: 'center',
+              marginLeft: '0px'
+            }}
+            onClick={() => setMenuOpen(false)}
+          >Order</a>
         </div>
         {/* Cart icon removed */}
       </div>
