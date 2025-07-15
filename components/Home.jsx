@@ -107,8 +107,12 @@ function Home() {
         <div style={{ textAlign: 'center', margin: '60px 0 40px 0' }}>
           <h2 style={{ fontSize: '2.3rem', fontWeight: 'bold', marginBottom: '24px', color: '#222' }}>Order Your Favorites Today</h2>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '16px' }}>
-            <button 
+            <a
+              href="https://instagram.com/thebrowniebay__/"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
+                display: 'inline-block',
                 background: '#b39ddb',
                 color: '#222',
                 border: 'none',
@@ -119,9 +123,12 @@ function Home() {
                 cursor: 'pointer',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.07)',
                 transition: 'background 0.2s',
+                textDecoration: 'none', // removes underline
+                textAlign: 'center'
               }}
-              onClick={() => window.open('https://www.instagram.com/direct/t/thebrowniebay_/', '_blank')}     
-            >Order Now</button>
+            >
+              Order Now
+            </a>
             <button
               style={{
                 background: '#fff',
