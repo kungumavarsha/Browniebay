@@ -889,6 +889,8 @@
   .navbar-content {
     flex-direction: row;
     height: 80px;
+    position: fixed;
+    z-index: 1000;
   }
   .navbar-logo {
     margin-left: 0px;

@@ -129,24 +129,7 @@ function Home() {
             >
               Order Now
             </a>
-            <a
-              href="/Menu"
-              style={{
-                display: 'inline-block',
-                background: '#fff',
-                color: '#62438C',
-                border: '2px solid #b39ddb',
-                borderRadius: '24px',
-                padding: '14px 38px',
-                fontSize: '1.1rem',
-                fontWeight: 'bold',
-                cursor: 'pointer',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.07)',
-                transition: 'background 0.2s',
-                textDecoration: 'none',
-                textAlign: 'center'
-              }}
-            >Menu</a>
+           
           </div>
         </div>
         {/* Minimal Centered Footer */}
