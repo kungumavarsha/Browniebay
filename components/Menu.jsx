@@ -1135,8 +1135,12 @@ const Menu = () => {
       </div>
       {/* Order Now Button at the end of the menu page */}
       <div style={{ textAlign: 'center', margin: '60px 0 40px 0' }}>
-        <button 
+        <a
+          href="https://www.instagram.com/direct/t/thebrowniebay__/"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
+            display: 'inline-block',
             background: '#b39ddb',
             color: '#222',
             border: 'none',
@@ -1147,9 +1151,10 @@ const Menu = () => {
             cursor: 'pointer',
             boxShadow: '0 2px 8px rgba(0,0,0,0.07)',
             transition: 'background 0.2s',
+            textDecoration: 'none',
+            textAlign: 'center'
           }}
-          onClick={() => window.open('https://www.instagram.com/direct/t/thebrowniebay__/', '_blank')}
-        >Order Now</button>
+        >Order Now</a>
       </div>
     </>
   );
